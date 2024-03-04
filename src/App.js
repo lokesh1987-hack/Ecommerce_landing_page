@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { CategoriesBar } from './Components/CategoriesBar';
+import { NavigationBar } from './Components/NavigationBar';
+import { Slider } from './Components/Slider';
+import './styles/homePage.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <NavigationBar />
+      <div className='mx-4 mb-5' >
+        <CategoriesBar />
+        <CategoriesBar image={true} />
+        <Slider />
+      </div>
     </div>
   );
 }

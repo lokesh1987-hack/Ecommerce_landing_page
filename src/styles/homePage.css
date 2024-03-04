@@ -1,0 +1,92 @@
+
+.navbar {
+    background: linear-gradient(180deg, rgba(242, 202, 136, 0.88) -27.7%, rgba(255, 255, 255,0.88) 119.23%) !important;
+}
+
+/* Style the input field */
+.input-group {
+    position: relative;
+}
+.input-group input[type="text"] {
+    padding-left: 30px; /* Adjust this value as needed */
+}
+  
+  /* Style the icon */
+.input-group .icon {
+    position: absolute;
+    left: 10px; /* Adjust this value as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray; /* Adjust the color as needed */
+}
+
+
+.login_button {
+    background: linear-gradient(180deg, #F2CA88 0%, #EDB25A 100%);
+    box-shadow: 0px 12px 20px 0px rgba(233, 155, 57, 0.56);
+}
+
+
+/* Categories */
+.category_bar {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category_bar .category_text {
+    display: inline-block;
+    margin-right: 20px !important;
+}
+
+.category_text_bar:nth-last-child(1) {
+    border-right: none !important;
+}
+
+
+/* Sliders  */
+.carousel-control-prev-icon {
+    background-image: url("https://static-00.iconduck.com/assets.00/arrow-circle-left-icon-512x512-rgannmkc.png") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("https://static-00.iconduck.com/assets.00/arrow-circle-right-icon-512x512-b8acao5m.png") !important;
+}
+
+.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover {
+    color: none;
+}
+
+.slide_button {
+    height: 14px !important;
+    width: 14px !important;
+    border-radius: 50% !important;
+    background-color: #000 !important;
+}
+.carousel-indicators {
+ 	right:auto !important;
+    bottom: 70px !important; 
+    align-items: center !important;
+}
+
+.carousel-indicators .active {
+    width: 18px !important;
+    height: 18px !important;
+	align-items: center !important;
+    background-color: darkgoldenrod !important;
+}
+
+@media screen and (max-width: 769px) {
+    .carousel-indicators{
+        right:0 !important;
+        bottom: 0px !important; 
+        align-items: center !important;
+    }
+    .slide_button {
+        height: 10px !important;
+        width: 10px !important;
+    }
+    .carousel-indicators .active {
+        width: 12px !important;
+        height: 12px !important;
+    }
+  }
